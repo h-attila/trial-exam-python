@@ -11,7 +11,7 @@ def letterCounter(fileName):
         inputFile.close()
         return fileText.count('a')
 
-    except:
+    except FileNotFoundError:
         return 0
 
 
